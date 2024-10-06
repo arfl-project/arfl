@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARFL - Autonomous Road Filling and Levelling Robot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4A2E6F;
+        }
+
+        .header {
+            background-color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .header h1 {
+            margin: 10px 0 0 0;
+            font-size: 24px;
+        }
+
+        .header h2 {
+            margin: 5px 0 0 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .banner {
+            background : url('./pothole.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+        }
+
+        .bannerText {
+            width: 100%;
+            padding: 50px;
+            margin-top: 210px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.66);
+            font-size: 30px;
+            background-blend-mode: screen;
+        }
+
+        .section {
+            background-color: #D9D9D9;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .section img {
+            width: 100px;
+        }
+
+        .section h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .button {
+            background-color: #65558F;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .contact-section {
+            background-color: #D9D9D9;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+            color: #000;
+        }
+
+        .contact-section h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .contact-section .icon {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4A2E6F;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="./ARFLlogo.png" alt="ARFL Logo">
+        <h1>Autonomous Road Filling and Levelling Robot</h1>
+        
+    </div>
+
+    <div class="banner">
+        <div class="bannerText">
+            A technology that restores roads and brings them back to life.
+        </div>
+    </div> 
+
+    <div class="section">
+        <img src="./ARFLlogo2.png" alt="ARFL">
+        <h3>About ARFL</h3>
+        <p>The goal of this project is to develop a robot capable of identifying potholes in the streets, measuring them, then mixing the materials and filling the potholes, and levelling them, and use the AI to detect location and size of potholes using Camera and laser Sensor.</p>
+        <a class="button" onclick="scrollToDiv()">Order Now</a>
+    </div>
+
+    <div class="section">
+        <h3>About Us</h3>
+        <p>We are a team brought together by our passion for science and technology, driven to create innovative solutions that help develop the world and solve problems. Now, we stand on the brink of a new era in street maintenance, where robots assist humans in restoring roads and addressing infrastructure needs.</p>
+    </div>
+
+    <div class="contact-section" id = "contact">
+        <h3>Contact Us</h3>
+        <p><span class="icon">📧</span>arflcom2023@gmail.com</p>
+        <p><span class="icon">📞</span>+962 79 7461 808</p>
+    </div>
+
+    <footer>
+        &copy; 2024 ARFL. All rights reserved.
+    </footer>
+
+    <script>
+        function scrollToDiv() {
+            const targetDiv = document.getElementById("contact");
+            
+            // Scroll to the target div smoothly
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+            const originalColor = targetDiv.style.backgroundColor;
+            targetDiv.style.backgroundColor = "lightyellow";
+            setTimeout(() => {
+                targetDiv.style.backgroundColor = originalColor || "#ddd";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
